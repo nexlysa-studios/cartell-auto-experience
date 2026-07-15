@@ -218,7 +218,7 @@ function Hero() {
 
       <motion.div
         style={{ opacity }}
-        className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-start justify-center px-6 lg:px-10"
+        className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 text-center lg:px-10"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -234,28 +234,17 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="max-w-5xl font-display text-5xl font-semibold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-8xl"
+          className="max-w-3xl font-display text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          Cape Town's Trusted <br className="hidden sm:block" />
+          Cape Town's Trusted{" "}
           <span className="text-shimmer">Vehicle Service</span> Specialists.
         </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.35 }}
-          className="mt-8 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl"
-        >
-          Professional servicing, diagnostics, maintenance and repairs that keep your
-          vehicle performing at its best — with the honesty and precision of a
-          dealership service centre.
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a href="#booking" className="btn-gold group inline-flex items-center gap-2 rounded-full px-8 py-4 text-base">
             Book a Service
