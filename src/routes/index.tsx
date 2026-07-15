@@ -198,17 +198,9 @@ function Hero() {
   return (
     <section id="top" ref={ref} className="relative h-[100svh] min-h-[720px] w-full overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0">
-        <img
-          src={heroAsset.url}
-          alt="Luxury vehicle service bay at The Cartell Auto"
-          className="hidden h-full w-full object-cover sm:block"
-          width={1920}
-          height={1200}
-          fetchPriority="high"
-        />
         <video
           src={heroVideoAsset.url}
-          className="block h-full w-full object-cover sm:hidden"
+          className="block h-full w-full object-cover"
           autoPlay
           muted
           loop
