@@ -16,6 +16,8 @@ import g2Asset from "../assets/g2.jpg.asset.json";
 import g3Asset from "../assets/g3.jpg.asset.json";
 import g4Asset from "../assets/g4.jpg.asset.json";
 import g5Asset from "../assets/g5.jpg.asset.json";
+import g6Asset from "../assets/g6.jpg.asset.json";
+import g7Asset from "../assets/g7.jpg.asset.json";
 import beforeAsset from "../assets/before.jpg.asset.json";
 import afterAsset from "../assets/after.jpg.asset.json";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
