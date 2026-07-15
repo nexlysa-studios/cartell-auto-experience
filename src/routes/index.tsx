@@ -8,6 +8,8 @@ import {
   Check, CircleDot, Search, FileCheck2, KeyRound, PhoneCall,
 } from "lucide-react";
 import heroAsset from "../assets/hero.jpg.asset.json";
+import heroVideoAsset from "../assets/hero-bg.mp4.asset.json";
+import logoAsset from "../assets/logo.jpg.asset.json";
 import aboutAsset from "../assets/about.jpg.asset.json";
 import g1Asset from "../assets/g1.jpg.asset.json";
 import g2Asset from "../assets/g2.jpg.asset.json";
@@ -116,8 +118,8 @@ function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <a href="#top" className="flex items-center gap-2.5 group">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-gold shadow-luxe transition-transform group-hover:rotate-12">
-            <Cog className="h-5 w-5 text-black" strokeWidth={2.4} />
+          <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-black shadow-luxe ring-1 ring-[color:var(--gold)]/40 transition-transform group-hover:scale-105">
+            <img src={logoAsset.url} alt="The Cartell Auto logo" className="h-full w-full object-cover" />
           </span>
           <span className={`font-display text-lg font-semibold tracking-tight transition-colors ${scrolled ? "text-foreground" : "text-white"}`}>
             The Cartell <span className="text-gradient-gold">Auto</span>
@@ -199,10 +201,20 @@ function Hero() {
         <img
           src={heroAsset.url}
           alt="Luxury vehicle service bay at The Cartell Auto"
-          className="h-full w-full object-cover"
+          className="hidden h-full w-full object-cover sm:block"
           width={1920}
           height={1200}
           fetchPriority="high"
+        />
+        <video
+          src={heroVideoAsset.url}
+          className="block h-full w-full object-cover sm:hidden"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={heroAsset.url}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/85" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(200,160,69,0.28),transparent_55%)]" />
@@ -1058,9 +1070,9 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <a href="#top" className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-gold">
-                <Cog className="h-5 w-5 text-black" strokeWidth={2.4} />
+            <a href="#top" className="flex items-center gap-3">
+              <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-full bg-black ring-1 ring-[color:var(--gold)]/40">
+                <img src={logoAsset.url} alt="The Cartell Auto logo" className="h-full w-full object-cover" />
               </span>
               <span className="font-display text-lg font-semibold text-white">
                 The Cartell <span className="text-gradient-gold">Auto</span>
