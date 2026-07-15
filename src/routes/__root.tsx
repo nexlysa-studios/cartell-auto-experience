@@ -85,19 +85,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "The Cartell Auto" },
       { property: "og:site_name", content: "The Cartell Auto" },
-      { property: "og:title", content: "The Cartell Auto — Vehicle Servicing & Maintenance Professionals" },
+      { property: "og:title", content: "The Cartell Auto — Cape Town's Trusted Vehicle Service Specialists" },
       {
         property: "og:description",
         content:
-          "Cape Town's premium vehicle service specialists. Servicing, diagnostics, repairs and preventative maintenance for every make and model.",
+          "Professional vehicle servicing, diagnostics, brakes, suspension and maintenance in Cape Town. Book your service with The Cartell Auto — 52 Castle Street.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "The Cartell Auto — Cape Town" },
+      { name: "twitter:title", content: "The Cartell Auto — Cape Town's Trusted Vehicle Service Specialists" },
       {
         name: "twitter:description",
-        content: "Premium vehicle servicing, diagnostics and repairs in Cape Town.",
+        content: "Professional vehicle servicing, diagnostics, brakes, suspension and maintenance in Cape Town. Book your service with The Cartell Auto — 52 Castle Street.",
       },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff3707d9-465c-45a9-8b08-928437f8f7d6/id-preview-15791e57--81baf1a7-d699-4f19-aa2f-31cbe4bbb907.lovable.app-1784126735121.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff3707d9-465c-45a9-8b08-928437f8f7d6/id-preview-15791e57--81baf1a7-d699-4f19-aa2f-31cbe4bbb907.lovable.app-1784126735121.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -107,7 +109,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
