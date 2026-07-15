@@ -16,6 +16,8 @@ import g2Asset from "../assets/g2.jpg.asset.json";
 import g3Asset from "../assets/g3.jpg.asset.json";
 import g4Asset from "../assets/g4.jpg.asset.json";
 import g5Asset from "../assets/g5.jpg.asset.json";
+import g6Asset from "../assets/g6.jpg.asset.json";
+import g7Asset from "../assets/g7.jpg.asset.json";
 import beforeAsset from "../assets/before.jpg.asset.json";
 import afterAsset from "../assets/after.jpg.asset.json";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -198,17 +200,9 @@ function Hero() {
   return (
     <section id="top" ref={ref} className="relative h-[100svh] min-h-[720px] w-full overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0">
-        <img
-          src={heroAsset.url}
-          alt="Luxury vehicle service bay at The Cartell Auto"
-          className="hidden h-full w-full object-cover sm:block"
-          width={1920}
-          height={1200}
-          fetchPriority="high"
-        />
         <video
           src={heroVideoAsset.url}
-          className="block h-full w-full object-cover sm:hidden"
+          className="block h-full w-full object-cover"
           autoPlay
           muted
           loop
@@ -226,7 +220,7 @@ function Hero() {
 
       <motion.div
         style={{ opacity }}
-        className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-start justify-center px-6 lg:px-10"
+        className="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-6 text-center lg:px-10"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -242,28 +236,17 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15, ease: [0.2, 0.8, 0.2, 1] }}
-          className="max-w-5xl font-display text-5xl font-semibold leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-8xl"
+          className="max-w-3xl font-display text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          Cape Town's Trusted <br className="hidden sm:block" />
+          Cape Town's Trusted{" "}
           <span className="text-shimmer">Vehicle Service</span> Specialists.
         </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.35 }}
-          className="mt-8 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl"
-        >
-          Professional servicing, diagnostics, maintenance and repairs that keep your
-          vehicle performing at its best — with the honesty and precision of a
-          dealership service centre.
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <a href="#booking" className="btn-gold group inline-flex items-center gap-2 rounded-full px-8 py-4 text-base">
             Book a Service
@@ -687,6 +670,8 @@ function Gallery() {
     { src: g2Asset.url, alt: "Polished engine bay", h: "" },
     { src: g1Asset.url, alt: "Engine diagnostics scanner", h: "row-span-2" },
     { src: g5Asset.url, alt: "Wheel and brake service", h: "" },
+    { src: g6Asset.url, alt: "BMW M-series service in progress", h: "row-span-2" },
+    { src: g7Asset.url, alt: "Performance vehicles in the workshop", h: "" },
     { src: g4Asset.url, alt: "Precision tools", h: "" },
     { src: aboutAsset.url, alt: "Technicians at work", h: "row-span-2" },
   ];
