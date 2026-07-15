@@ -670,6 +670,8 @@ function Gallery() {
     { src: g2Asset.url, alt: "Polished engine bay", h: "" },
     { src: g1Asset.url, alt: "Engine diagnostics scanner", h: "row-span-2" },
     { src: g5Asset.url, alt: "Wheel and brake service", h: "" },
+    { src: g6Asset.url, alt: "BMW M-series service in progress", h: "row-span-2" },
+    { src: g7Asset.url, alt: "Performance vehicles in the workshop", h: "" },
     { src: g4Asset.url, alt: "Precision tools", h: "" },
     { src: aboutAsset.url, alt: "Technicians at work", h: "row-span-2" },
   ];
